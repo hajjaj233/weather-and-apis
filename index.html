@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+  
+
+      <nav class="navbar navbar-expand-lg my-bg py-5">
+        <div class="container ">
+          <a class="navbar-brand text-white ms-5" href="#"> <i class="fa-solid fa-cloud text-primary m-2 fs-1"></i>Weather</a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a class="nav-link active text-primary btn bg-transparent border border-2 border-primary px-4 rounded-5" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Photo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid home position-relative">
+        <div class="row">
+            <div class="col-md-12 text-center position-relative mt-5">
+                <input type="text" id="location" class="my-bg w-75 m-5 p-3 rounded-5 text-white border-0" placeholder="Find your location">
+                <input type="submit" class="btn  bg-primary  px-4 py-2 rounded-4 text-white pos" value="find" id="">
+            </div>
+        </div>
+        <div class="container w-100 mt-3  d-flex">
+            <div class="mycard">
+                <div class="card-header header-bg d-flex justify-content-between text-white">
+                    <span class="ms-3" id="todayday">wednesday</span>
+                    <span class="me-3" id="month">18December</span>
+                </div>
+                <div class="card-body body-bg text-white p-4">
+                    <span id="town">cairo</span>
+                    <h1 id="degree">14.1 C</h1>
+                    <br>
+                    <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" id="icon" width="90" alt="weather statue">
+                    <br>
+                    <span class="text-primary fs-4" id="statue">mist</span>
+                </div>
+                <div class="card-footer text-white-50 body-bg d-flex gap-5 border-0">
+                    <div class="humidity ms-4">
+                    <i class="fa-solid fa-umbrella"></i>
+                    <span id="humidity">20%</span>
+                    </div>
+                    <div class="wind">
+                    <i class="fa-solid fa-wind"></i> 
+                    <span id="wind">18km/h</span>
+                    </div>
+                    <div class="winddirection">
+                        <i class="fa-regular fa-compass"></i>
+                        <span id="winddirection">east</span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="mycard nextday">
+                <!-- <div class="card-header header-bg text-center text-white">
+                    <span class="ms-3">wednesday</span>
+                </div>
+                <div class="card-body body-bg text-white p-4 d-flex flex-column justify-content-center align-items-center">
+                    <br>
+                    <img src="	https://cdn.weatherapi.com/weather/64x64/day/113.png" width="100" id="tomorrowicon" alt="tomorrow statue">
+                    <br>
+                    <span class="fs-1">20.3 C</span>
+                    <br>
+                    <small>11.9</small>
+                    <br>
+                    <span class="text-primary fs-4" >mist</span>
+                </div> -->
+
+            </div>
+
+
+            <div class="mycard nextday">
+                <!-- <div class="card-header header-bg text-center text-white">
+                    <span class="ms-3">wednesday</span>
+                </div>
+                <div class="card-body body-bg text-white p-4 d-flex flex-column justify-content-center align-items-center">
+                    <br>
+                    <img src="	https://cdn.weatherapi.com/weather/64x64/day/113.png" width="100" id="tomorrowicon" alt="tomorrow statue">
+                    <br>
+                    <span class="fs-1">20.3 C</span>
+                    <br>
+                    <small>11.9</small>
+                    <br>
+                    <span class="text-primary fs-4" >mist</span>
+                </div> -->
+            </div>
+            
+        </div>
+        <div class="other-half my-bg w-100  position-absolute my-position">
+
+        </div>
+    </div>
+    <div class="container-fluid overflow-hidden my-bg2 footer">
+        <div class="row mt-5 py-5 w-75 m-auto">
+            <div class="col-md-8">
+                <input type="text" id="location" class="my-bg border-0 w-75 m-4 mt-5 p-3 rounded-5 text-white " placeholder="Enter your email to subscribe">
+                <br>
+                <button class="btn btn-primary ms-5 mb-4">subscribe</button>
+                <br>
+                
+            </div>
+            <div class="col-md-4 fs-4 ps-5 mt-5">
+                <a href="#" class="border border-0 p-2 rounded-circle my-bg  me-3"><i class="text-white fa-brands fa-facebook"></i></a>
+                <a href="#" class="border border-0 p-2 rounded-circle my-bg  me-3"><i class="text-white fa-brands fa-twitter"></i></a>
+                <a href="#" class="border border-0 p-2 rounded-circle my-bg  me-3"><i class="text-white fa-brands fa-google-drive"></i></a>
+                <a href="#" class="border border-0 p-2 rounded-circle my-bg  me-3"><i class="text-white fa-brands fa-pinterest"></i></a>
+            </div>
+            <span class="text-white ">Copyright 2014 Company name. Designed by Themezy. All rights reserved</span>
+        </div>
+    </div>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
